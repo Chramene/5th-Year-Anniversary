@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            5th Anniversary
+        </title>
+        <meta charset = "UTF-8">
+        <link href = "index.css" rel = "stylesheet">
+    </head>
+    <body onclick="myFunction()">
+        <div id = "left">
+            <div id = "topLeft">
+                <img id = "topLeftRecipe" src = "resources/Slurppp.jpg">
+                <img id = "topLeftFrame" src = "resources/coolFrame2.png">
+                <a id = "topLeftOverlay"  target = "_blank"">
+                    <div id = "topLeftHoverTitle">Slurppppppp</div>
+                    <p id = "topLeftHoverDescription">Miss ko na food buddy ko! Hehe, kain kain tayo madami kapag!!!</p>
+                </a>
+            </div>
+            <div id = "bottomLeft"> 
+                <img id = "bottomLeftRecipe" src = "resources/Birthdayss.jpg">
+                <img id = "bottomLeftFrame" src ="resources/coolFrame2.png">
+                <a id = "bottomLeftOverlay"  target = "_blank">
+                    <div id = "bottomLeftHoverTitle">To all the Birthdayss</div>
+                    <p id = "bottomLeftHoverDescription">Woi Babiii! Magkasama sana tayo sa mga susunod na birthdays mwehe</p>
+                </a>
+            </div>
+        </div>
+
+        <div id = "middle">
+            <div id = "header">
+                <h1 id = "title">5th Year Anniversary!</h1>
+                <img id = "underline" src = resources/underline2.png>            
+            </div>
+            <div id = "gifContainer">
+                <iframe src="resources/SheenaDance.gif" width="370" height="658"></iframe>
+            </div>
+            <!--<a id = "sauce" target = "_blank" href = "https://youtube.com/shorts/ZXMeYSP_2Eg?feature=share">
+                Mwehe click me Babbiii!!!</a>
+            -->
+        </div>
+
+        <div id = "right">
+            <div id = "topRight">
+                <img id = "topRightRecipe" src = "resources/Pets.jpg">
+                <img id = "topRightFrame" src = "resources/coolFrame2.png">
+                <a id = "topRightOverlay"  target = "_blank">
+                    <div id = "topRightHoverTitle">Pets</div>
+                    <p id = "topRightHoverDescription">Woi mag alaga tayo panda AAHAHHA</p>
+                </a>
+            </div>
+            <div id = "bottomRight">
+                <img id = "bottomRightRecipe" src = "resources/MeandYou.jpg">
+                <img id = "bottomRightFrame" src = "resources/coolFrame2.png">
+                <a id = "bottomRightOverlay"  target = "_blank">
+                    <div id = "bottomRightHoverTitle">Eshleeep</div>
+                    <p id = "bottomRightHoverDescription">Woiiiiiii!!!!! Miss na kita!! Miss ko naring matulog katabi ka!!!!!</p>
+                </a>
+            </div>
+        </div>
+
+        <div id = "shitpost">
+            <h1 id = "yuyukoTitle">Kalbo</h1>
+            <a id = "thing" href = "https://www.youtube.com/watch?v=hN5WMvtzaD8" target = "_blank">
+                <img id = "yuyuko" src = "resources/Kalbo.jpg">
+                <audio id = "ResurrectionButterfly-80%Reflowering"><source src = "resources/Recording.m4a"></source></audio>
+            </a>
+            <div class = "gimmeFood">LeszGooooo </div>
+            <div class = "gimmeFood">ㅤ</div>
+            <div class = "gimmeFood">(Wavyouuu)</div>
+            <div class = "gimmeFood">(Gulat ba?Mwuahahah)</div>
+            <div class = "gimmeFood">(Kaya natin diz!!)</div>
+        </div>
+
+        <script>
+           var saigyouji = document.getElementById('yuyuko'),
+           music = document.getElementById('ResurrectionButterfly-80%Reflowering')
+	        audios = document.querySelectorAll('audio');
+            console.log(audios);
+
+            saigyouji.addEventListener('mouseover', function() {
+            [].forEach.call(audios, function(audio) {
+            music.play();
+            });
+            }, false);
+
+            saigyouji.addEventListener('mouseleave', function() {
+            music.pause();
+            music.currentTime = 0;
+            }, false);
+
+            function myFunction() {
+                document.getElementById("shitpost").style.display = "block";
+            }
+        </script>
+    </body>
+</html>
